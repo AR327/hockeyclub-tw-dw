@@ -4,12 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Hockeyclub</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-manrope {
+            font-family: 'Manrope';
+        }
+    </style>
 </head>
 
 <body>
+    <header class="md:container md:mx-auto font-manrope sm:text-sm ">
+        <div class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                        <li>
+                            <a>
+                                <span style="color: #FF4240;">Home</span>
+                            </a>
+                        </li>
 
+                        <li><a>About</a></li>
+                        <li><a>Page</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="flex">
+                    <i class="fa-solid fa fa-magnifying-glass hidden" aria-hidden="true"></i>
+                    <a class="btn btn-ghost text-xl">
+
+                        Hockey<span style="color: #FF4240;">'</span>s
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <a>
+                            <span style="color: #FF4240;">Home</span>
+                        </a>
+                    </li>
+
+                    <li><a>About</a></li>
+                    <li><a>Page</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fa-solid fa fa-magnifying-glass hidden" aria-hidden="true"></i>
+                <a class="btn" style="background-color: #FF4240; color: #ffffff;">Join</a>
+            </div>
+        </div>
+
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="md:container md:mx-auto font-manrope ">
+        <section>
+            <div class="border-t border-b border-dashed border-custom-border my-14 ">
+
+                <div class="text-center my-10">
+                    <h1 class=" text-2xl md:text-4xl font-extrabold">Professional Hockeys Club</h1>
+                    <p class="font-medium text-base py-4">Get in the game! Join our hockey club now and be part of the
+                        action. </p>
+                </div>
+            </div>
+
+        </section>
+        <section>
+
+            <div class="flex items-center justify-center text-center p-14">
+                <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div class="">
+                        <div class="radial-progress" style="--value:87; color: #FF4240 ;" role="progressbar">87%</div>
+                        <h3>Prayer Facility</h3>
+                        <p> Score goals on the rink, find peace in our prayer facility.</p>
+                    </div>
+                    <div class="">
+                        <div class="radial-progress " style="--value:95; color: #49D293" role="progressbar">95%</div>
+                        <h3>Experienced Coach</h3>
+                        <p>Guidance from a seasoned coach awaits you. Elevate your game with us!</p>
+                    </div>
+                    <div class="">
+                        <div class="radial-progress " style="--value:90;color: #eeb957" role="progressbar">90%</div>
+                        <h3>Senior Player</h3>
+                        <p>Join us and play alongside experienced seniors!</p>
+                    </div>
+                    <div class="">
+                        <div class="radial-progress text-primary" style="--value:87;" role="progressbar">80%</div>
+                        <h3>Training Ground</h3>
+                        <p>"Sharpen your skills on our premier training ground. Join us for top-notch development!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="border-t border-b border-dashed border-custom-border ">
+                <div class="text-center py-10">
+                    <h1 class="text-2xl md:text-4xl font-extrabold">Program Section</h1>
+                    <p class="font-medium text-base py-4">"Discover age-specific programs and elevate your game at our
+                        premier hockey club. </p>
+                </div>
+            </div>
+            <div class="py-10 border-t  border-dashed border-custom-border">
+
+            </div>
+
+
+
+        </section>
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
+                <div class="hero w-full h-80 rounded-xl" style="background-image: url('Images/2.png');">
+                    <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+                    <div class="hero-content text-left text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class=" sm:mb-5 font-bold text-3xl md:text-5xl">Junior Program</h1>
+                            <p class="mb-5">Embark on the hockey journey early with our junior program designed for ages
+                                9-12. Join us and let young players flourish!</p>
+                            <a class="btn border-0" style="background-color: #FF4240; color: #ffffff;">
+                                Register Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="hero w-full h-80 rounded-xl rounded-xl" style="background-image: url('Images/3.png'); ">
+                    <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+                    <div class="hero-content text-left text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="sm:mb-5 font-bold text-3xl md:text-5xl">Teenager Program</h1>
+                            <p class="mb-5">Empower teenagers to thrive on the ice with our dedicated program tailored
+                                for ages 13-17. Join us and elevate your teenage hockey experience!</p>
+
+
+                            <a class="btn border-0" style="background-color: #FF4240; color: #ffffff;"> Register
+                                Now!</a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+        </section>
+        <section>
+            <div class="hero w-full h-[440px] mt-6 rounded-xl rounded-xl"
+                style="background-image: url('Images/3.png'); ">
+                <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+                <div class="hero-content text-left text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="sm:mb-5 font-bold text-3xl md:text-5xl">Professional Program</h1>
+                        <p class="mb-5">Elevate your game to the pro level with our specialized program designed for
+                            seasoned players. Join us and unleash your full potential on the ice</p>
+
+
+                        <a class="btn border-0" style="background-color: #FF4240; color: #ffffff;"> Register
+                            Now!</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

@@ -14,15 +14,28 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f51eff0b51.js" crossorigin="anonymous"></script>
 
     <style>
         .font-manrope {
             font-family: 'Manrope';
         }
+
+        .text-custom-footer {
+            color: #808080;
+        }
+
+        div {
+            color: black;
+        }
+
+        p {
+            color: rgba(19, 19, 24, 0.60);
+        }
     </style>
 </head>
 
-<body>
+<body class="bg-white">
     <header class="md:container md:mx-auto font-manrope sm:text-sm ">
         <div class="navbar">
             <div class="navbar-start">
@@ -50,8 +63,7 @@
                     </ul>
                 </div>
                 <div class="flex">
-                    <i class="fa-solid fa fa-magnifying-glass hidden" aria-hidden="true"></i>
-                    <a class="btn btn-ghost text-xl">
+                    <a class="btn btn-ghost text-3xl p-0">
 
                         Hockey<span style="color: #FF4240;">'</span>s
                     </a>
@@ -74,8 +86,23 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <i class="fa-solid fa fa-magnifying-glass hidden" aria-hidden="true"></i>
-                <a class="btn" style="background-color: #FF4240; color: #ffffff;">Join</a>
+                <div class="pr-6"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <g clip-path="url(#clip0_5_6)">
+                            <path
+                                d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
+                                stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5_6">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <a class="btn border-0" style="background-color: #FF4240; color: #ffffff; ">Get Ticket</a>
             </div>
         </div>
 
@@ -83,7 +110,7 @@
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="Images/1.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❮</a>
                     <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
             </div>
@@ -120,22 +147,22 @@
 
             <div class="flex items-center justify-center text-center p-14">
                 <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-                    <div class="">
+                    <div>
                         <div class="radial-progress" style="--value:87; color: #FF4240 ;" role="progressbar">87%</div>
                         <h3>Prayer Facility</h3>
                         <p> Score goals on the rink, find peace in our prayer facility.</p>
                     </div>
-                    <div class="">
+                    <div>
                         <div class="radial-progress " style="--value:95; color: #49D293" role="progressbar">95%</div>
                         <h3>Experienced Coach</h3>
                         <p>Guidance from a seasoned coach awaits you. Elevate your game with us!</p>
                     </div>
-                    <div class="">
+                    <div>
                         <div class="radial-progress " style="--value:90;color: #eeb957" role="progressbar">90%</div>
                         <h3>Senior Player</h3>
                         <p>Join us and play alongside experienced seniors!</p>
                     </div>
-                    <div class="">
+                    <div>
                         <div class="radial-progress text-primary" style="--value:87;" role="progressbar">80%</div>
                         <h3>Training Ground</h3>
                         <p>"Sharpen your skills on our premier training ground. Join us for top-notch development!</p>
@@ -162,10 +189,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
                 <div class="hero w-full h-80 rounded-xl" style="background-image: url('Images/2.png');">
                     <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
-                    <div class="hero-content text-left text-neutral-content">
+                    <div class="hero-content text-left ">
                         <div class="max-w-md">
-                            <h1 class=" sm:mb-5 font-bold text-3xl md:text-5xl">Junior Program</h1>
-                            <p class="mb-5">Embark on the hockey journey early with our junior program designed for ages
+                            <h1 class=" sm:mb-5 font-bold text-3xl md:text-5xl  text-white">Junior Program</h1>
+                            <p class="mb-5 text-white">Embark on the hockey journey early with our junior program
+                                designed for ages
                                 9-12. Join us and let young players flourish!</p>
                             <a class="btn border-0" style="background-color: #FF4240; color: #ffffff;">
                                 Register Now!</a>
@@ -176,10 +204,11 @@
 
                 <div class="hero w-full h-80 rounded-xl rounded-xl" style="background-image: url('Images/3.png'); ">
                     <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
-                    <div class="hero-content text-left text-neutral-content">
+                    <div class="hero-content text-left ">
                         <div class="max-w-md">
-                            <h1 class="sm:mb-5 font-bold text-3xl md:text-5xl">Teenager Program</h1>
-                            <p class="mb-5">Empower teenagers to thrive on the ice with our dedicated program tailored
+                            <h1 class=" sm:mb-5 font-bold text-3xl md:text-5xl  text-white">Teenager Program</h1>
+                            <p class="mb-5 text-white">Empower teenagers to thrive on the ice with our dedicated program
+                                tailored
                                 for ages 13-17. Join us and elevate your teenage hockey experience!</p>
 
 
@@ -197,10 +226,11 @@
             <div class="hero w-full h-[440px] mt-6 rounded-xl rounded-xl"
                 style="background-image: url('Images/3.png'); ">
                 <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
-                <div class="hero-content text-left text-neutral-content">
+                <div class="hero-content text-left ">
                     <div class="max-w-md">
-                        <h1 class="sm:mb-5 font-bold text-3xl md:text-5xl">Professional Program</h1>
-                        <p class="mb-5">Elevate your game to the pro level with our specialized program designed for
+                        <h1 class="sm:mb-5 font-bold text-3xl md:text-5xl text-white">Professional Program</h1>
+                        <p class="mb-5 text-white">Elevate your game to the pro level with our specialized program
+                            designed for
                             seasoned players. Join us and unleash your full potential on the ice</p>
 
 
@@ -215,8 +245,8 @@
             <div class="border-t border-b border-dashed border-custom-border ">
                 <div class="lg:w-1/2 md:w-3/4 w-full mx-auto text-center space-y-5 my-10">
                     <h2 class="text-custom-text lg:text-4xl md:text-3xl text-2xl font-extrabold">Our New Products</h2>
-                    <p class="text-custom-text2">
-                        Checkout our new collect
+                    <p>
+                        Checkout our new collections.
                     </p>
                 </div>
             </div>
@@ -227,21 +257,21 @@
                         <img class="h-full w-full object-cover rounded-xl" src="Images/5.png" alt="">
                     </div>
                     <div class="col-span-2 space-y-2 lg:mt-0 mt-5">
-                        <div class="flex gap-5 flex-wrap">
+                        <div class="flex gap-5 ">
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-solid fa fa-star" style="color: #ffb83d; margin-right: 3px;"
                                         aria-hidden="true"></i>5.0
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-eye" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>70
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-heart" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>200
                                 </p>
@@ -249,10 +279,10 @@
                         </div>
                         <h3 class="text-xl font-extrabold">
                             World Cup Jacket</h3>
-                        <p class="text-custom-text2">Get your jacket now</p>
+                        <p>Get our limited edition World Cup special jacket now</p>
                         <div class="flex gap-2 flex-wrap justify-between">
                             <p class="font-bold text-lg"> <span style="color: #FF4240;">Price - $22.00</span></p>
-                            <p class="text-custom-text2">
+                            <p>
                                 <i class="fa-solid fa fa-cart-shopping" style="color: #808080; margin-right: 3px;"
                                     aria-hidden="true"></i>
                                 Delivery Fee: Free
@@ -268,30 +298,30 @@
                     <div class="col-span-2 space-y-2 lg:mt-0 mt-5">
                         <div class="flex gap-5 flex-wrap">
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-solid fa fa-star" style="color: #ffb83d; margin-right: 3px;"
                                         aria-hidden="true"></i>5.0
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-eye" style="color: #808080; margin-right: 3px;"
-                                        aria-hidden="true"></i>11
+                                        aria-hidden="true"></i>125
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-heart" style="color: #808080; margin-right: 3px;"
-                                        aria-hidden="true"></i>152
+                                        aria-hidden="true"></i>210
                                 </p>
                             </div>
                         </div>
                         <h3 class="text-xl font-extrabold">World Cup Football</h3>
-                        <p class="text-custom-text2">Football of world cup with good quality</p>
+                        <p>Original World Cup Football is available</p>
                         <div class="flex gap-2 flex-wrap justify-between">
                             <p class="font-bold text-lg"> <span style="color: #FF4240;">Price - $22.00</span></p>
 
-                            <p class="text-custom-text2">
+                            <p>
                                 <i class="fa-solid fa fa-cart-shopping" style="color: #808080; margin-right: 3px;"
                                     aria-hidden="true"></i>
                                 Delivery Fee: Free
@@ -307,31 +337,31 @@
                     <div class="col-span-2 space-y-2 lg:mt-0 mt-5">
                         <div class="flex gap-5 flex-wrap">
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-solid fa fa-star" style="color: #ffb83d; margin-right: 3px;"
                                         aria-hidden="true"></i>5.0
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-eye" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>40
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-heart" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>500
                                 </p>
                             </div>
                         </div>
                         <h3 class="text-xl font-extrabold">Cap</h3>
-                        <p class="text-custom-text2">
-                            colorful yellow cap
+                        <p>
+                            We have different color options for our designer cap
                         </p>
                         <div class="flex gap-2 flex-wrap justify-between">
                             <p class="font-bold text-lg"> <span style="color: #FF4240;">Price - $22.00</span></p>
-                            <p class="text-custom-text2">
+                            <p>
                                 <i class="fa-solid fa fa-cart-shopping" style="color: #808080; margin-right: 3px;"
                                     aria-hidden="true"></i>
                                 Delivery Fee: Free
@@ -347,31 +377,31 @@
                     <div class="col-span-2 space-y-2 lg:mt-0 mt-5">
                         <div class="flex gap-5 flex-wrap">
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-solid fa fa-star" style="color: #ffb83d; margin-right: 3px;"
                                         aria-hidden="true"></i>5.0
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-eye" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>30
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-heart" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>80
                                 </p>
                             </div>
                         </div>
                         <h3 class="text-xl font-extrabold">World Cup Jersey</h3>
-                        <p class="text-custom-text2">
-                            Jersey with good quality
+                        <p>
+                            Grab your Player Edition jersey before it gets out of stock
                         </p>
                         <div class="flex gap-2 flex-wrap justify-between">
                             <p class="font-bold text-lg"> <span style="color: #FF4240;">Price - $22.00</span></p>
-                            <p class="text-custom-text2">
+                            <p>
                                 <i class="fa-solid fa fa-cart-shopping" style="color: #808080; margin-right: 3px;"
                                     aria-hidden="true"></i>
                                 Delivery Fee: Free
@@ -387,31 +417,31 @@
                     <div class="col-span-2 space-y-2 lg:mt-0 mt-5">
                         <div class="flex gap-5 flex-wrap">
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-solid fa fa-star" style="color: #ffb83d; margin-right: 3px;"
                                         aria-hidden="true"></i>
                                     5.0
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-eye" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>130
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-heart" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>250
                                 </p>
                             </div>
                         </div>
                         <h3 class="text-xl font-extrabold">Helmet</h3>
-                        <p class="text-custom-text2">
-                            Green helmet with good quality</p>
+                        <p>
+                            Player edition only</p>
                         <div class="flex gap-2 flex-wrap justify-between">
                             <p class="font-bold text-lg"> <span style="color: #FF4240;">Price - $22.00</span></p>
-                            <p class="text-custom-text2">
+                            <p>
                                 <i class="fa-solid fa fa-cart-shopping" style="color: #808080; margin-right: 3px;"
                                     aria-hidden="true"></i>
                                 Delivery Fee: Free
@@ -426,31 +456,31 @@
                     <div class="col-span-2 space-y-2 lg:mt-0 mt-5">
                         <div class="flex gap-5 flex-wrap">
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-solid fa fa-star" style="color: #ffb83d; margin-right: 3px;"
                                         aria-hidden="true"></i>5.0
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-eye" style="color: #808080; margin-right: 3px;"
-                                        aria-hidden="true"></i>25
+                                        aria-hidden="true"></i>225
                                 </p>
                             </div>
                             <div>
-                                <p class="text-custom-text2">
+                                <p>
                                     <i class="fa-regular fa fa-heart" style="color: #808080; margin-right: 3px;"
                                         aria-hidden="true"></i>300
                                 </p>
                             </div>
                         </div>
                         <h3 class="text-xl font-extrabold">World Cup Poster</h3>
-                        <p class="text-custom-text2">
-                            Poster made on world cup theme
+                        <p>
+                            CLick to checkout our World Cup themed posters
                         </p>
                         <div class="flex gap-2 flex-wrap justify-between">
                             <p class="font-bold text-lg"> <span style="color: #FF4240;">Price - $22.00</span></p>
-                            <p class="text-custom-text2">
+                            <p>
                                 <i class="fa-solid fa fa-cart-shopping" style="color: #808080; margin-right: 3px;"
                                     aria-hidden="true"></i>
                                 Delivery Fee: Free
@@ -461,44 +491,216 @@
             </div>
         </section>
 
+
+        <!-- <section class="container mx-auto md:px-24 px-5 md:mt-20 mt-10">
+            <div class="border-t border-b border-dashed border-custom-border ">
+                <div class="lg:w-1/2 md:w-3/4 w-full mx-auto text-center space-y-5 my-10">
+                    <h2 class="text-custom-text lg:text-4xl md:text-3xl text-2xl font-extrabold">Clients Question</h2>
+
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                    Our equipment
+                </div>
+                <div class="collapse-content">
+                    <p>These are our equipments</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                    Hockey Training
+                </div>
+                <div class="collapse-content">
+                    <p>Our hockey training program</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                    Private Lessons
+                </div>
+                <div class="collapse-content">
+                    <p>You can get private lessons in our club</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                    Hockey Training
+                </div>
+                <div class="collapse-content">
+                    <p>Our hockey training program</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                    Hockey Training
+                </div>
+                <div class="collapse-content">
+                    <p>Our hockey training program</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                    Hockey Training
+                </div>
+                <div class="collapse-content">
+                    <p>Our hockey training program</p>
+                </div>
+            </div>
+           -->
+
+
+        <section>
+            <div class="flex flex-col w-full">
+                <div class="border-t border-b border-dashed ">
+                    <div class="text-center my-6 md:my-8">
+                        <h2 class="text-2xl md:text-4xl font-extrabold">Get In Touch</h2>
+                        <p class=" text-base font-medium mt-6 px-4 lg:px-0">
+                            Contact us 24/7
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10 ">
+                    <div class="space-y-5 border rounded-2xl p-5">
+                        <div class="bg-[#a8d85b18] p-8 space-y-6 rounded-2xl mt-8">
+                            <img src="Images/Group 1171275317.png">
+                            <div class="py-1">
+                                <p class="text-base text-[#13131866] font-normal">
+                                    Phone Number:
+                                </p>
+                                <h4 class="text-lg font-extrabold">
+                                    (+62) 123-321-543
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="bg-[#eed05b1a] p-8 space-y-6 rounded-2xl">
+                            <img src="Images/Group 1171275318.png">
+                            <div class="py-1">
+                                <p class="text-base text-[#13131866] font-normal">Email:</p>
+                                <h4 class="text-lg font-extrabold">
+                                    hockeys@support.com
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="bg-[#5d96ec1a] p-8 space-y-6 rounded-2xl">
+                            <img src="Images/Group 1171275321.png" alt="">
+                            <div class="py-1">
+                                <p class="text-base text-[#13131866] font-normal">
+                                    Location:
+                                </p>
+                                <h4 class="text-lg  font-extrabold">
+                                    152/1 Mohakhali Wireless Gate
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 lg:col-span-2">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text  text-xl font-bold text-black">Your Name</span>
+                                </div>
+                                <input type="text" class="input input-bordered w-full bg-[#13131808] border-none"
+                                    placeholder="Enter your full name">
+                            </label>
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text  text-xl font-bold text-black">Your Email</span>
+                                </div>
+                                <input type="email" class="input input-bordered w-full bg-[#13131808] border-none"
+                                    placeholder="Enter your email">
+                            </label>
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text text-xl font-bold text-black">Subject</span>
+                                </div>
+                                <input type="text" class="input input-bordered w-full bg-[#13131808] border-none"
+                                    placeholder="Enter your subject">
+                            </label>
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text text-xl font-bold text-black">Phone Number</span>
+                                </div>
+                                <input type="text" class="input input-bordered w-full bg-[#13131808] border-none"
+                                    placeholder="Enter your phone number">
+                            </label>
+                            <label class="form-control col-span-1 md:col-span-2">
+                                <div class="label">
+                                    <span class="label-text  text-xl font-bold text-black">Message</span>
+                                </div>
+                                <textarea
+                                    class="text-base textarea h-40 lg:h-96 bg-[#13131808]  textarea-bordered border-none "
+                                    placeholder="Write your message"></textarea>
+                            </label>
+                            <button
+                                class="bg-red-500 rounded-xl h-12 text-white font-bold col-span-1 md:col-span-2 border-none text-base lg:text-xl">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#13131808] rounded-xl mt-5 lg:mt-10 space-y-5 flex flex-col items-center p-10 ">
+                    <h3 class="text-2xl font-extrabold">
+                        Social Media
+                    </h3>
+                    <div class="space-x-5">
+                        <i class="fa-brands fa fa-twitter text-3xl cursor-pointer"></i>
+                        <i class="fa-brands fa fa-facebook-f text-3xl cursor-pointer"></i>
+                        <i class="fa-brands fa fa-instagram text-3xl cursor-pointer"></i>
+                        <i class="fa-brands fa fa-github text-3xl cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
     </main>
 
-    <footer class="footer my-10 p-10 bg-black text-neutral-content font-manrope">
+    <footer class="footer my-10 p-10 bg-black font-manrope">
 
-        <nav>
-            <h3 class="text-white text-lg font-bold">Get in touch</h3>
-            <p class="text-custom-ash ">Contanct us through these methods</p>
+        <nav class="ml-[250px]">
+            <h3 class="text-white text-lg font-bold ">Get in touch</h3>
+            <p class="text-custom-footer ">Contact us below</p>
             <div class="flex">
                 <i class="fa-light fa fa-envelope my-1" style="margin-right: 0.75rem;color: #FF4240"
                     aria-hidden="true"></i>
-                <p class="text-custom-ash font-medium">hockeys@support.com</p>
+                <p class="text-custom-footer font-medium">hockeys@support.com</p>
             </div>
             <div class="flex">
-                <i class="fa-regular fa fa-phone text-custom-orange my-2" style="margin-right: 0.75rem; color: #FF4240""
-                        aria-hidden=" true"></i>
-                <p class="text-custom-ash font-medium">(+62) 123-321-543</p>
+                <i class="fa-solid fa-phone text-red-600 my-1" style="margin-right: 0.75rem; color: #FF4240"
+                    aria-hidden="true"></i>
+                <p class="text-custom-footer font-medium">(+62) 123-321-543</p>
             </div>
 
         </nav>
         <nav>
-            <h3 class="text-white text-lg font-bold">Services</h3>
-            <p class="text-custom-ash font-medium">Branding</p>
-            <p class="text-custom-ash font-medium">Design</p>
-            <p class="text-custom-ash font-medium">Marketing</p>
-            <p class="text-custom-ash font-medium">Advertisement</p>
+            <h3 class="text-white text-lg font-bold ">Services</h3>
+            <p class="text-custom-footer font-medium">Branding</p>
+            <p class="text-custom-footer font-medium">Design</p>
+            <p class="text-custom-footer font-medium">Marketing</p>
+            <p class="text-custom-footer font-medium">Advertisement</p>
         </nav>
         <nav>
             <h3 class=" text-white text-lg font-bold">Company</h3>
-            <p class="text-custom-ash font-medium">About us</p>
-            <p class="text-custom-ash font-medium">Contact</p>
-            <p class="text-custom-ash font-medium">Jobs</p>
-            <p class="text-custom-ash font-medium">Press kit</p>
+            <p class="text-custom-footer font-medium">About us</p>
+            <p class="text-custom-footer font-medium">Contact</p>
+            <p class="text-custom-footer font-medium">Jobs</p>
+            <p class="text-custom-footer font-medium">Press kit</p>
         </nav>
         <nav>
             <h3 class=" text-white text-lg font-bold">Legal</h3>
-            <p class="text-custom-ash font-medium">Terms of use</p>
-            <p class="text-custom-ash font-medium">Privacy policy</p>
-            <p class="text-custom-ash font-medium">Cookie policy</p>
+            <p class="text-custom-footer font-medium">Terms of use</p>
+            <p class="text-custom-footer font-medium">Privacy policy</p>
+            <p class="text-custom-footer font-medium">Cookie policy</p>
         </nav>
     </footer>
 

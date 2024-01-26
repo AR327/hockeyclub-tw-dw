@@ -132,7 +132,7 @@
         </div>
     </header>
     <main class="md:container md:mx-auto font-manrope ">
-        <section>
+        <section class="px-5 lg:px-0">
             <div class="border-t border-b border-dashed border-custom-border my-14 ">
 
                 <div class="text-center my-10">
@@ -145,7 +145,7 @@
         </section>
         <section>
 
-            <div class="flex items-center justify-center text-center p-14">
+            <div class="flex items-center justify-center text-center lg:p-14 mb-16">
                 <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     <div>
                         <div class="radial-progress" style="--value:87; color: #FF4240 ;" role="progressbar">87%</div>
@@ -170,7 +170,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="px-5 lg:px-0">
             <div class="border-t border-b border-dashed border-custom-border ">
                 <div class="text-center py-10">
                     <h1 class="text-2xl md:text-4xl font-extrabold">Program Section</h1>
@@ -241,7 +241,7 @@
             </div>
 
         </section>
-        <section class="container mx-auto md:px-24 px-5 md:mt-20 mt-10">
+        <section class="container mx-auto md:px-24 px-5 lg:px-0 md:mt-20 mt-10">
             <div class="border-t border-b border-dashed border-custom-border ">
                 <div class="lg:w-1/2 md:w-3/4 w-full mx-auto text-center space-y-5 my-10">
                     <h2 class="text-custom-text lg:text-4xl md:text-3xl text-2xl font-extrabold">Our New Products</h2>
@@ -497,18 +497,21 @@
                 <div class="lg:w-1/2 md:w-3/4 w-full mx-auto text-center space-y-5 my-10">
                     <h2 class="text-custom-text lg:text-4xl md:text-3xl text-2xl font-extrabold">Clients Question
                     </h2>
+                    <p> Discover everything you need to know at <span style="font-weight: bold;">Hockey</span><span
+                            style="font-weight:bold; color: #FF4240;">'</span><span style="font-weight: bold;">s</span>.
+                        From
+                        equipment insights to booking appointments, we've got you covered.</p>
 
                 </div>
             </div>
         </section>
 
-        <div class="flex flex-col  container mx-auto md:flex md:px-24 px-5 md:mt-20 mt-10 rounded-2xl border p-8 ">
-
+        <div class="container lg:flex lg:basis-1/4 mx-auto md:px-24 px-5 md:mt-20 mt-10 rounded-2xl border p-8">
             <section>
                 <img src="Images/11.png" alt="">
             </section>
 
-            <section class="flex-1 font-manrope h-full mt-7 ml-8">
+            <section class="font-manrope lg:ml-10 lg:basis-3/4 mt-0 ml-0 ">
                 <div class="collapse collapse-plus bg-white text-black">
                     <input type="radio" name="my-accordion-3" checked="checked" />
                     <div class="collapse-title text-xl font-extrabold">
@@ -573,7 +576,7 @@
 
 
 
-        <section class=" container mx-auto md:px-24 px-5 md:mt-20 mt-10">
+        <section class=" container mx-auto md:px-24 px-5 lg:px-0 md:mt-20 mt-10">
             <div class="flex flex-col w-full">
                 <div class="border-t border-b border-dashed ">
                     <div class="text-center my-6 md:my-8">
@@ -682,9 +685,9 @@
 
     </main>
 
-    <footer class="footer my-10 p-10 bg-black font-manrope">
+    <footer class="footer my-10 p-10 bg-black font-manrope justify-center gap-10 lg:gap-40">
 
-        <nav class="ml-[250px]">
+        <nav class="sm: ml-14">
             <h3 class="text-white text-lg font-bold ">Get in touch</h3>
             <p class="text-custom-footer ">Contact us below</p>
             <div class="flex">
@@ -699,26 +702,33 @@
             </div>
 
         </nav>
-        <nav>
-            <h3 class="text-white text-lg font-bold ">Services</h3>
-            <p class="text-custom-footer font-medium">Branding</p>
-            <p class="text-custom-footer font-medium">Design</p>
-            <p class="text-custom-footer font-medium">Marketing</p>
-            <p class="text-custom-footer font-medium">Advertisement</p>
+        <nav class="sm:grid-cols-2 gap-12 lg:gap-40 lg:flex">
+            <nav>
+                <h3 class=" text-white text-lg font-bold">Company</h3>
+                <p class="text-custom-footer font-medium">About us</p>
+                <p class="text-custom-footer font-medium">Leadership</p>
+                <p class="text-custom-footer font-medium">Careers</p>
+                <p class="text-custom-footer font-medium">News & Article</p>
+                <p class="text-custom-footer font-medium">Legal Notice</p>
+            </nav>
+            <nav>
+                <h3 class=" text-white text-lg font-bold">Support</h3>
+                <p class="text-custom-footer font-medium">Help Center</p>
+                <p class="text-custom-footer font-medium">FAQ</p>
+                <p class="text-custom-footer font-medium">Ticket Support</p>
+                <p class="text-custom-footer font-medium">Contact Us</p>
+            </nav>
+            <nav class="col-span-2 ml-16 lg:ml-0">
+                <h3 class="text-white text-lg font-bold ">Services</h3>
+                <p class="text-custom-footer font-medium">Academy</p>
+                <p class="text-custom-footer font-medium">Group Lesson</p>
+                <p class="text-custom-footer font-medium">Private Lesson</p>
+                <p class="text-custom-footer font-medium">Hockeys For Kids</p>
+                <p class="text-custom-footer font-medium">Hockeys For Adults</p>
+            </nav>
         </nav>
-        <nav>
-            <h3 class=" text-white text-lg font-bold">Company</h3>
-            <p class="text-custom-footer font-medium">About us</p>
-            <p class="text-custom-footer font-medium">Contact</p>
-            <p class="text-custom-footer font-medium">Jobs</p>
-            <p class="text-custom-footer font-medium">Press kit</p>
-        </nav>
-        <nav>
-            <h3 class=" text-white text-lg font-bold">Legal</h3>
-            <p class="text-custom-footer font-medium">Terms of use</p>
-            <p class="text-custom-footer font-medium">Privacy policy</p>
-            <p class="text-custom-footer font-medium">Cookie policy</p>
-        </nav>
+
+
     </footer>
 
 
